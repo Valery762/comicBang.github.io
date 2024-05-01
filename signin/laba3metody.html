@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="css/stylelab3.css" />
+<script type="text/javascript">
+function ValidMail() {
+    let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+    let myMail = document.getElementById('email').value;
+    let validMail = re.test(myMail);
+
+    let reName = /^[\w]+[\w-]+$/i;
+    let myName = document.getElementById('name').value;
+    let validName = reName.test(myName);
+
+    let reviewText = document.getElementById('review').value;
+
+    if (validMail && validName && reviewText.trim() !== '') {
+        document.getElementById('message').innerHTML = 'Ваш отзыв отправлен';
+        document.getElementById('popup').style.display = 'block';
+    } else {
+        document.getElementById('message').innerHTML = 'Пожалуйста, заполните все поля формы!';
+    }
+}
+</script>
+</head>
+<body>
+<form class="form-container">
+    <p id="message">Пожалуйста, заполните все поля формы!</p>
+    Name: <input id="name" type="text" size="25"/><br/>
+    E-mail: <input id="email" name="email" type="text" size="20" /><br />
+    Review: <textarea id="review" rows="4"></textarea><br />
+    <button type="button" onclick="ValidMail();">Отправить</button>
+</form>
+
+<div id="popup" class="popup">
+    <p>Ваш отзыв отправлен</p>
+</div>
+
+</body>
+</html>

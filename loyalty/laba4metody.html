@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Форма карты лояльности</title>
+    <link rel="stylesheet" href="css/style4.css" />
+</head>
+<body>
+    <form class="form-container" id="loyaltyForm">
+        Фамилия: <input type="text" id="inputSurname"> <br/>
+        Имя: <input type="text" id="inputName"> <br/>
+        Телефон: <input type="text" id="inputPhone"> <br/>
+        Возраст: <input type="text" id="inputAge"> <br/>
+        <input type="submit" value="Зарегистрировать карту"><br/>
+        <button onclick="resetData()">Очистить поля</button>
+    </form>
+
+    <div id="cardInfo" class="card" style="display: none;">
+        Номер карты: <span id="cardNumber"></span><br/>
+        Фамилия: <span id="surnameInfo"></span><br/>
+        Имя: <span id="nameInfo"></span><br/>
+    </div>
+
+    <button id="resetButton" class="button" style="display: none;">Ввести данные заново</button>
+
+    <script type="text/javascript">
+        document.getElementById('loyaltyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let surname = document.getElementById('inputSurname').value.trim();
+            let name = document.getElementById('inputName').value.trim();
+            let phone = document.getElementById('inputPhone').value.trim();
+            let age = parseInt(document.getElementById('inputAge').value);
+
+            if (surname === '' || name === '' || phone === '' || isNaN(age)) {
+                alert('Пожалуйста, заполните все поля анкеты корректно.');
+                resetForm();
+                return;
+            }
+
+            if (age < 18) {
+                alert('Карта выдается только после 18 лет');
+                resetForm();
+                return;
+            }
+
+            let cardNumber = Math.floor(Math.random() * 1000000);
+            document.getElementById('cardNumber').textContent = cardNumber;
+            document.getElementById('surnameInfo').textContent = surname;
+            document.getElementById('nameInfo').textContent = name;
+            document.getElementById('cardInfo').style.display = 'block';
+            document.getElementById('resetButton').style.display = 'block';
+        });
+
+        function resetForm() {
+            document.getElementById('loyaltyForm').reset();
+            document.getElementById('cardInfo').style.display = 'none';
+            document.getElementById('resetButton').style.display = 'none';
+        }
+
+        document.getElementById('resetButton').addEventListener('click', function() {
+            resetForm();
+        });
+
+        document.getElementById('inputSurname').addEventListener('input', function() {
+            this.value = this.value.toUpperCase();
+        });
+
+        document.getElementById('inputName').addEventListener('input', function() {
+            this.value = this.value.toUpperCase();
+        });
+        function resetData(){
+            document.getElementById("inputSurname").value = "";
+            document.getElementById("inputName").value = "";
+            document.getElementById("inputPhone").value = "";
+            document.getElementById("inputAge").value = "";
+        }
+    </script>
+</body>
+</html>

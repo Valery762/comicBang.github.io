@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин комиксов</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Логотип сайта">
+        </div>
+        <div class="contact-info">
+    <span>Телефон: </span>
+    <a href="#" class="button">+7 (123) 456-7890</a>
+    <span>Email: </span>
+    <a href="#" class="button">ivanov123@mail.com</a>
+    <input type="text" placeholder="Поиск...">
+        </div>
+    </header>
+      <nav>
+        <ul>
+            <li><a href="signin/laba3metody.html">Войти</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Каталог товаров</a></li>
+            <li><a href="cart/Laba9.html">Корзина</a></li>
+            <li><a href="loyalty/laba4metody.html">Карта лояльности</a></li>
+        </ul>
+    </nav> 
+     <div class="catalog-sidebar">
+    <header class="catalog-header">
+        <h2>Каталог</h2>
+    </header>
+    <section class="catalog-menu">
+        <input type="checkbox" id="exclusive-toggle" class="menu-toggle">
+        <label for="exclusive-toggle" class="menu-label">Эксклюзивы</label>
+        <ul class="menu-items">
+            <li><a href="#">Комиксы с автографом</a></li>
+            <li><a href="#">Эксклюзивный мерч</a></li>
+            <li><a href="#">Редкие комиксы</a></li>
+            <li><a href="#">Эксклюзивы Bubble</a></li>
+            <li><a href="#">Азиатские эксклюзивы</a></li>
+        </ul>
+    </section>
+    <section class="catalog-menu">
+        <input type="checkbox" id="sale-toggle" class="menu-toggle">
+        <label for="sale-toggle" class="menu-label">Распродажа</label>
+        <ul class="menu-items">
+            <li><a href="#">Комиксы с уценкой</a></li>
+            <li><a href="#">Распродажа Комиксов</a></li>
+            <li><a href="#">Комплекты комиксов</a></li>
+        </ul>
+    </section>
+</div>
+    <section class="product">
+  <div class="product__info">
+    <div class="container">
+      <h1 class="product__title">Каталог товаров</h1>
+    </div>
+  </div>
+</section>
+<section class="product-grid">
+        <div class="card">
+  <div class="card__top">
+    <a href="#" class="card__image">
+      <img src="./images/1book.jpg" alt="Дешево и сердито. Том 1">
+    </a>
+  </div>
+  <div class="card__bottom">
+    <div class="card__prices">
+      <div class="card__price card__price--discount">1300</div>
+      <div class="card__price card__price--common">1550</div>
+    </div>
+    <a href="#" class="card__title">Дешево и сердито. Том 1</a>
+<button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-0">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Дешево и сердито. Том 1</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/1.1mod.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/1.2mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/1.3mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/2book.jpg"
+                alt="Маяковский. Как писать стихи"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">1200</div>
+              <div class="card__price card__price--common">1450</div>
+            </div>
+            <a href="#" class="card__title">
+             Маяковский. Как писать стихи
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-1">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Маяковский. Как писать стихи</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/2.1mod.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/2.2mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/2.3mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/3book.jpg"
+                alt="Капитан Марвел. Том 1"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">1100</div>
+              <div class="card__price card__price--common">1250</div>
+            </div>
+            <a href="#" class="card__title">
+             Капитан Марвел. Том 1
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-2">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Капитан Марвел. Том 1</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/3.1mod.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/3.2mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/3.3mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/4.jpg"
+                alt="Удивительный человек-Паук"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">1100</div>
+              <div class="card__price card__price--common">1250</div>
+            </div>
+            <a href="#" class="card__title">
+             Удивительный Человек-Паук
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-3">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Удивительный Человек-Паук</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/4.1mod.jpeg" alt="Изображение 1" class="slide">
+        <img src="./images/4.2mod.jpeg" alt="Изображение 2" class="slide">
+        <img src="./images/4.3mod.jpeg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/5book.jpg"
+                alt="Injustice. Боги среди нас. Год Третий. Издание делюкс"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">1100</div>
+              <div class="card__price card__price--common">1250</div>
+            </div>
+            <a href="#" class="card__title">
+             Injustice. Боги среди нас. Год Третий. Издание делюкс
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-4">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Injustice. Боги среди нас. Год Третий. Издание делюкс</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/5.1mod.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/5.2mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/5.3mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/6book.jpg"
+                alt="Бэтмен. Под Красным Колпаком"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">1250</div>
+              <div class="card__price card__price--common">1600</div>
+            </div>
+            <a href="#" class="card__title">
+             Бэтмен. Под Красным Колпаком
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-5">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Бэтмен. Под Красным Колпаком</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/6book.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/6.1mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/6.2mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/8book.jpg"
+                alt="W.I.T.C.H. Чародейки. Книга стихий. Том 1"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">450</div>
+              <div class="card__price card__price--common">460</div>
+            </div>
+            <a href="#" class="card__title">
+             W.I.T.C.H. Чародейки. Книга стихий. Том 1
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-8">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">W.I.T.C.H. Чародейки. Книга стихий. Том 1</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/9.1mod.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/9.2mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/9.3mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div> 
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/7book.jpeg"
+                alt="W.I.T.C.H. Чародейки. Месть Нериссы. Том 1"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">870</div>
+              <div class="card__price card__price--common">1090</div>
+            </div>
+            <a href="#" class="card__title">
+             W.I.T.C.H. Чародейки. Месть Нериссы. Том 1
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-6">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">W.I.T.C.H. Чародейки. Месть Нериссы. Том 1</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/7.1mod.jpeg" alt="Изображение 1" class="slide">
+        <img src="./images/7.2mod.jpeg" alt="Изображение 2" class="slide">
+        <img src="./images/7.3mod.jpeg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>   
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/9book.jpg"
+                alt="Halo. Инициация"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">870</div>
+              <div class="card__price card__price--common">1090</div>
+            </div>
+            <a href="#" class="card__title">
+            Halo. Инициация
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-7">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Halo. Инициация</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/8.1mod.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/8.2mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/8.3mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>    
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/10book.png"
+                alt="Sonic. 30-летний юбилей"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">650</div>
+              <div class="card__price card__price--common">650</div>
+            </div>
+            <a href="#" class="card__title">
+            Sonic. 30-летний юбилей
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-9">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Sonic. 30-летний юбилей</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/10.1mod.png" alt="Изображение 1" class="slide">
+        <img src="./images/10.2mod.png" alt="Изображение 2" class="slide">
+        <img src="./images/10.3mod.png" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div> 
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/11book.jpg"
+                alt="Академия Амбрелла"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">690</div>
+              <div class="card__price card__price--common">1600</div>
+            </div>
+            <a href="#" class="card__title">
+            Академия Амбрелла
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-10">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Академия Амбрелла</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/11.1mod.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/11.2mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/11.3mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/13book.jpeg"
+                alt="Блэк Метал"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">890</div>
+              <div class="card__price card__price--common">1550</div>
+            </div>
+            <a href="#" class="card__title">
+            Блэк Метал
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-11">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Блэк Метал</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/13.1mod.jpeg" alt="Изображение 1" class="slide">
+        <img src="./images/13.2mod.jpeg" alt="Изображение 2" class="slide">
+        <img src="./images/13.3mod.jpeg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<h1 class="product__title">Манга</h1> 
+
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/12book.png"
+                alt="BECK. Восточная Ударная Группа. Книга 1"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">990</div>
+              <div class="card__price card__price--common">1100</div>
+            </div>
+            <a href="#" class="card__title">
+            BECK. Восточная Ударная Группа. Книга 1
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-12">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">BECK. Восточная Ударная Группа. Книга 1</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/12.1mod.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/12.2mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/12.3mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/14book.png"
+                alt="GTO. Крутой учитель Онидзука. Книга 1"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">990</div>
+              <div class="card__price card__price--common">1100</div>
+            </div>
+            <a href="#" class="card__title">
+           GTO. Крутой учитель Онидзука. Книга 1
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-13">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">GTO. Крутой учитель Онидзука. Книга 1</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/14.1mod.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/14.2mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/14.3mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>  
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/15book.jpg"
+                alt="Made in Abyss. Созданный в Бездне. Том 1"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">570</div>
+              <div class="card__price card__price--common">790</div>
+            </div>
+            <a href="#" class="card__title">
+           Made in Abyss. Созданный в Бездне. Том 1
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-14">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Made in Abyss. Созданный в Бездне. Том 1</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/15.1mod.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/15.2mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/15.3mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>  
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/16book.jpg"
+                alt="One Piece. Большой куш. Книга 1"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">980</div>
+              <div class="card__price card__price--common">1100</div>
+            </div>
+            <a href="#" class="card__title">
+           One Piece. Большой куш. Книга 1
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-15">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">One Piece. Большой куш. Книга 1</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/16book.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/16.1mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/16.2mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>   
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/17book.jpg"
+                alt="One-Punch Man. Том 1"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">830</div>
+              <div class="card__price card__price--common">1000</div>
+            </div>
+            <a href="#" class="card__title">
+           One-Punch Man. Том 1
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-16">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">One-Punch Man. Том 1</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/17book.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/17.1mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/17.2mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>  
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/18book.jpg"
+                alt="Sailor Moon. Том 1"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">560</div>
+              <div class="card__price card__price--common">800</div>
+            </div>
+            <a href="#" class="card__title">
+           Sailor Moon. Том 1
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-17">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Sailor Moon. Том 1</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/18book.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/18.1mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/18.2mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div> 
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/19book.jpg"
+                alt="Атака на титанов. Том 1"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">790</div>
+              <div class="card__price card__price--common">1000</div>
+            </div>
+            <a href="#" class="card__title">
+           Атака на титанов. Том 1
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-18">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Атака на титанов. Том 1</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/19book.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/19.1mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/19.2mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>     
+         <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="./images/20book.jpg"
+                alt="Бакуман. Том 1"
+              />
+            </a>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">790</div>
+              <div class="card__price card__price--common">1000</div>
+            </div>
+            <a href="#" class="card__title">
+           Бакуман. Том 1
+            </a>
+            <button class="card__add">К товару</button>
+          </div>
+        </div>
+        <div class="modal" id="modal-19">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Бакуман. Том 1</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="./images/20.1mod.jpg" alt="Изображение 1" class="slide">
+        <img src="./images/20.2mod.jpg" alt="Изображение 2" class="slide">
+        <img src="./images/20.3mod.jpg" alt="Изображение 3" class="slide">
+      </div>
+      <button class="prev-button" aria-label="Посмотреть предыдущее изображение">&lt;</button>
+      <button class="next-button" aria-label="Посмотреть следующее изображение">&gt;</button>
+    </div>
+    <div class="info-container">
+      <div class="info-section">
+        <h3>Описание</h3>
+        <p>Текст описания товара...</p>
+      </div>
+      <div class="info-section">
+        <h3>Обложка</h3>
+        <p>Текст обложки...</p>
+      </div>
+      <div class="info-section">
+        <h3>Издательство</h3>
+        <p>Текст издательства...</p>
+      </div>
+      <div class="info-section">
+        <h3>Цена</h3>
+        <p>Текст цены...</p>
+      </div>
+      <div class="info-section">
+        <h3>Отзывы</h3>
+        <p>Текст отзывов...</p>
+      </div>
+    </div>
+  </div>
+</div>                                                   
+</section>
+<footer class="site-footer">
+  <div class="upper-menu">
+    <h2><a hraf="#">Верхнее меню</a></h2>
+    <ul>
+      <li><a href="#">Личный кабинет</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Доставка и оплата</a></li>
+      <li><a href="#">Бонусная система</a></li>
+      <li><a href="#">Где мой заказ?</a></li>
+    </ul>
+  </div>
+  <div class="lower-menu">
+    <h2>Нижнее меню</h2>
+    <ul>
+      <li><a href="#">Публичная офера</a></li>
+      <li><a href="#">Политика конфиденциальности</a></li>
+      <li><a href="#">Условия обмена и возврата</a></li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Оплата</a></li>
+    </ul>
+  </div>
+  <div class="payment-methods">
+    <h2>Принимаем к оплате</h2>
+  </div>
+  <div class="newsletter">
+    <h2>Будь в курсе</h2>
+  </div>
+</footer>
+<script src="scripts/mainjs.js"></script>
+</body>
+</html>
